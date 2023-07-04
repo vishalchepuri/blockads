@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "My Ad Blocker",
+    "version": "1.0",
+    "description": "A simple ad blocker extension for Chrome",
+    "icons": {
+      "48": "icon.png"
+    },
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "My Ad Blocker"
+    }
+  }
+  
